@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#2b5b9a"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/questionTitle"
+        android:layout_width="227dp"
+        android:layout_height="71dp"
+        android:layout_above="@+id/switch1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-174dp"
+        android:text="Upcoming Alarms"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="230dp"
+        android:layout_height="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/switch2"
+        android:layout_marginTop="174dp"
+        android:text="Alarm 1"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="233dp"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editButton3"
+        android:layout_marginStart="14dp"
+        android:text="Alarm 2"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="232dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_marginBottom="176dp"
+        android:text="Alarm 3"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <Button
+        android:id="@+id/editButton1"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/questionTitle"
+        android:layout_marginTop="-174dp"
+        android:layout_toEndOf="@+id/switch2"
+        android:text="Button"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <Button
+        android:id="@+id/editButton2"
+        android:layout_width="92dp"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editButton3"
+        android:layout_marginEnd="110dp"
+        android:layout_marginTop="-127dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <Button
+        android:id="@+id/editButton3"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="67dp"
+        android:layout_marginEnd="64dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+    <TextView
+        android:id="@+id/clock"
+        android:layout_width="306dp"
+        android:layout_height="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@android:string/defaultMsisdnAlphaTag"
+        android:textColor="@android:color/background_light"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="29dp"
+        app:srcCompat="@android:drawable/ic_dialog_info"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="443dp" />
+
+</RelativeLayout>
